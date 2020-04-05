@@ -1,0 +1,29 @@
+header {
+	position: relative;
+	padding: 100px 20px 80px;
+	overflow: hidden;
+	background: var(--primary-color);
+	&:before {
+		position: absolute;
+		top: -43%;
+		right: -50%;
+		width: 200%;
+		height: 200%;
+		content: '';
+		transform: rotate(45deg);
+		//background: transparent center center no-repeat url(../images/githubflow.png);
+	}
+	> div {
+		position: relative;
+		z-index: 200;
+		section {
+			h1 {
+				margin-top: 0;
+				color: var(--white-color);
+			}
+      p {
+				color: var(--white-color);
+      }
+		}
+	}
+}

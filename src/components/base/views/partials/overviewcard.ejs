@@ -1,0 +1,19 @@
+<% results.forEach(result => { %>
+  <section class="forker-overview--card">
+    <header>
+      <h2><%= result.gitusername %></h2>
+      <img src="/images/down-arrow.svg" alt="Arrow down" />
+    </header>
+    <div class="forker-overview--card--commits-container">
+      <% result.commits.forEach(commitbydate => { %>
+        <section>
+          <h3><%= commitbydate.date %></h3>
+          <% commitbydate.commits.forEach(commit => { %>
+            <div><a href="detail/<%= result.gitusername %>&<%= result.repository %>&<%= commit.sha %>"><%= commit.commit %></a></div>
+          <% }) %>
+        </section>
+      <% }) %>
+    </div>
+  </section>
+<% }) %>
+

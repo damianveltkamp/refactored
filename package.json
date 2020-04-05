@@ -1,0 +1,38 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm ./server.js",
+    "dev": "nodemon -r esm ./server.js",
+    "bundle": "webpack",
+    "data": "node -r esm ./writeforkers.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "serviceworker-webpack-plugin": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "autoprefixer": "^9.7.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-manifest-plugin": "^2.2.0"
+  }
+}
